@@ -1,5 +1,8 @@
 package sistema;
 
+import componentes.TipoMotor;
+import componentes.TipoRueda;
+import componentes.TipoTapiceria;
 import produccion.CadenaMontaje;
 import vehiculos.Vehiculo;
 
@@ -11,44 +14,62 @@ public class DashboardImpl implements Dashboard {
         this.controller = controller;
     }
 
-    //TODO: Gestión de un dashboard: el sistema de gestión de fábrica dispone de un
-    //cuadro de mandos (en inglés, dashboard) que permite mostrar el balance de
-    //los distintos componentes en el almacén y el estado de los vehículos en
-    //construcción en las cadenas de montaje. Este cuadro de mandos será la
-    //herramienta que utilizará el gestor de planta para consultar el estado en el
-    //que se encuentran los vehículos que se están montando en cada una de las
-    //cadenas de montaje. Por tanto, cada vez que se produzca un cambio en las
-    //3
-    //cadenas de montaje y en el almacén porque un componente ha sido
-    //ensamblado, el dashboard tendrá que mostrar la modificación, mostrando la
-    //situación actual del estado de las cadenas de montaje y del almacén. Todo el
-    //proceso de montaje tiene que ser almacenado en la base de datos de
-    //manera que pueda ser consultado por fecha a nivel de componente. Cabe
-    //destacar que se espera que el diseño del dashboard esté desacoplado del
-    //subsistema de visualización de datos para que, en un futuro, el diseño pueda
-    //permitir fácilmente un cambio de subsistema de visualización de datos.
     @Override
     public void mostrar() {
 
-        System.out.println("===== DASHBOARD =====");
+        System.out.println("\n===== DASHBOARD =====");
 
-        // Mostrar estado de la cadena
-        CadenaMontaje c = controller.getPrimeraCadena();
-
-        if (c != null) {
-            System.out.println("Vehículos en cola:");
-
-            for (Vehiculo v : c.getCola()) {
-                System.out.println(v);
-            }
+        // =====================
+        // CADENAS DE MONTAJE
+        // =====================
+        if (controller.getCadenas().isEmpty()) {
+            System.out.println("No hay cadenas de montaje");
         } else {
-            System.out.println("No hay cadenas");
+            int i = 1;
+
+            for (CadenaMontaje c : controller.getCadenas()) {
+                System.out.println("\nCadena " + i + ":");
+
+                if (c.getCola().isEmpty()) {
+                    System.out.println("  Sin vehículos en cola");
+                } else {
+                    for (Vehiculo v : c.getCola()) {
+                        System.out.println("  " + v);
+                    }
+                }
+
+                i++;
+            }
         }
 
-        // Mostrar stock
-        System.out.println("\nStock de motores gasolina: " +
-                controller.getAlmacen().getStockMotor(componentes.TipoMotor.GASOLINA));
+        // =====================
+        // STOCK
+        // =====================
+        System.out.println("\n--- STOCK ---");
+        System.out.println("\n--- MOTORES ---");
+        System.out.println("Motores gasolina: " +
+                controller.getAlmacen().getStockMotor(TipoMotor.GASOLINA));
+        System.out.println("Motores eléctricos: " +
+                controller.getAlmacen().getStockMotor(TipoMotor.ELECTRICO));
+        System.out.println("Motores híbridos: " +
+                controller.getAlmacen().getStockMotor(TipoMotor.HIBRIDO));
 
-        System.out.println("=====================");
+        System.out.println("\n--- TAPICERÍAS ---");
+        System.out.println("Tapicería tipo TELA: " +
+                controller.getAlmacen().getStockTapiceria(TipoTapiceria.TELA));
+        System.out.println("Tapicería tipo CUERO: " +
+                controller.getAlmacen().getStockTapiceria(TipoTapiceria.CUERO));
+        System.out.println("Tapicería tipo ALCÁNTARA: " +
+                controller.getAlmacen().getStockTapiceria(TipoTapiceria.ALCANTARA));
+
+        System.out.println("\n--- RUEDAS ---");
+        System.out.println("Ruedas tipo NORMAL: " +
+                controller.getAlmacen().getStockRueda(TipoRueda.NORMAL));
+        System.out.println("Ruedas tipo DEPORTIVO: " +
+                controller.getAlmacen().getStockRueda(TipoRueda.DEPORTIVO));
+        System.out.println("Ruedas tipo TODOTERRENO: " +
+                controller.getAlmacen().getStockRueda(TipoRueda.TODOTERRENO));
+
+        System.out.println("=====================\n");
     }
 }

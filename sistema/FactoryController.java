@@ -48,7 +48,34 @@ public class FactoryController {
         }
     }
 
-    // =====================
+    public void setAlmacen(Almacen almacen) {
+        this.almacen = almacen;
+    }
+
+    public List<CadenaMontaje> getCadenas() {
+        return cadenas;
+    }
+
+    public void setCadenas(List<CadenaMontaje> cadenas) {
+        this.cadenas = cadenas;
+    }
+
+    public List<Trabajador> getTrabajadores() {
+        return trabajadores;
+    }
+
+    public void setTrabajadores(List<Trabajador> trabajadores) {
+        this.trabajadores = trabajadores;
+    }
+
+    public Scheduler getScheduler() {
+        return scheduler;
+    }
+
+    public void setScheduler(Scheduler scheduler) {
+        this.scheduler = scheduler;
+    }
+// =====================
     // TRABAJADORES
     // =====================
 
