@@ -17,6 +17,7 @@ public class LoggerSistema {
 
     public void mostrarLogs() {
         System.out.println("\n=== LOGS DEL SISTEMA ===");
+
         for (String e : eventos) {
             System.out.println(e);
         }
