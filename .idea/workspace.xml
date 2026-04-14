@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/sistema/LoggerSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/LoggerSistema.java" afterDir="false" />
+    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="IMP-Pruebas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/FabricaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/CadenaMontaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/CadenaMontaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/EstacionMontaje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/SchedulerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/SchedulerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/FactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/FactoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +78,7 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="main.FabricaMain" />
+      <option name="MAIN_CLASS_NAME" value="main.factory_main" />
       <module name="Fabrica-PEC" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,7 +107,7 @@
       <workItem from="1775669090426" duration="643000" />
       <workItem from="1775751526606" duration="4233000" />
       <workItem from="1776182536785" duration="2867000" />
-      <workItem from="1776185454776" duration="1388000" />
+      <workItem from="1776185454776" duration="2496000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -127,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776186766665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="IMP-Pruebas">
+      <option name="closed" value="true" />
+      <created>1776186877780</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776186877780</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="IMP-Pruebas" />
+    <option name="LAST_COMMIT_MESSAGE" value="IMP-Pruebas" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

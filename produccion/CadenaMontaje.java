@@ -20,58 +20,55 @@ public class CadenaMontaje {
         this.completados = new ArrayList<>();
     }
 
+    public String getId() {
+        return id;
+    }
+
     public Queue<Vehiculo> getCola() {
         return cola;
-    }
-
-    // Añadir vehículo a la cola
-    public void ponerEnCola(Vehiculo v) {
-        cola.add(v);
-    }
-
-    // Ver siguiente vehículo
-    public Vehiculo verPrimero() {
-        return cola.peek();
     }
 
     public List<Vehiculo> getCompletados() {
         return completados;
     }
 
-    // Avanzar un paso en la cadena
-    public void avanzar() {
+    public void ponerEnCola(Vehiculo v) {
+        cola.add(v);
+    }
 
+    public Vehiculo verPrimero() {
+        return cola.peek();
+    }
+
+    public void avanzar() {
         Vehiculo v = cola.peek();
 
         if (v == null) {
-            System.out.println("No hay vehículos en la cola");
+            System.out.println("  No hay vehículos en la cola");
             return;
         }
 
         switch (v.getEstado()) {
-
             case CHASIS:
                 v.setEstado(EstadoVehiculo.MOTOR);
-                System.out.println("Motor montado");
+                System.out.println("  Motor montado");
                 break;
 
             case MOTOR:
                 v.setEstado(EstadoVehiculo.TAPICERIA);
-                System.out.println("Tapicería montada");
+                System.out.println("  Tapicería montada");
                 break;
 
             case TAPICERIA:
                 v.setEstado(EstadoVehiculo.RUEDAS);
-                System.out.println("Ruedas montadas");
+                System.out.println("  Ruedas montadas");
                 break;
 
             case RUEDAS:
                 v.setEstado(EstadoVehiculo.COMPLETO);
-                System.out.println("Vehículo terminado");
-
-                completados.add(v); // 🔥 GUARDAR
+                completados.add(v);
                 cola.poll();
-
+                System.out.println("  Vehículo terminado");
                 break;
 
             case COMPLETO:
@@ -80,7 +77,6 @@ public class CadenaMontaje {
         }
     }
 
-    // Mostrar cola
     public void mostrarCola() {
         System.out.println("Cola de vehículos:");
         for (Vehiculo v : cola) {

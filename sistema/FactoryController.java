@@ -102,9 +102,8 @@ public class FactoryController {
     // =====================
 
     public void configurarScheduler() {
-        CadenaMontaje c = getPrimeraCadena();
-        if (c != null) {
-            scheduler = new SchedulerImpl(c);
+        if (!cadenas.isEmpty()) {
+            scheduler = new SchedulerImpl(cadenas);
         }
     }
 

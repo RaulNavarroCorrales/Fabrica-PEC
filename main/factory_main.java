@@ -8,7 +8,7 @@ import sistema.DashboardImpl;
 import sistema.FactoryController;
 import vehiculos.BiplazaDeportivo;
 
-public class FabricaMain {
+public class factory_main {
 
     public static void main(String[] args) {
 

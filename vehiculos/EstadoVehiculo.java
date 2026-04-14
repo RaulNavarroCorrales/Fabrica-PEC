@@ -8,5 +8,5 @@ package vehiculos;
  * @version (version number or date here)
  */
 public enum EstadoVehiculo {
-    CHASIS, MOTOR, TAPICERIA, RUEDAS
+    CHASIS, MOTOR, TAPICERIA, RUEDAS, COMPLETO
 }
