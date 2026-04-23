@@ -63,7 +63,6 @@ public abstract class Vehiculo {
     public List<Rueda> getRuedas() {
         return ruedas;
     }
-
     @Override
     public String toString() {
         return "Vehiculo{" +
