@@ -3,6 +3,7 @@ package sistema;
 import almacen.Almacen;
 import almacen.AlmacenImpl;
 import produccion.CadenaMontaje;
+import produccion.PlanificadorSimple;
 import produccion.Scheduler;
 import produccion.SchedulerImpl;
 import trabajadores.Trabajador;
@@ -17,6 +18,7 @@ public class FactoryController {
     private List<CadenaMontaje> cadenas;
     private List<Trabajador> trabajadores;
     private Scheduler scheduler;
+    private PlanificadorSimple planificador;
 
     public FactoryController() {
         this.almacen = new AlmacenImpl();
@@ -46,6 +48,10 @@ public class FactoryController {
         if (c != null) {
             c.ponerEnCola(v);
         }
+    }
+
+    public void setPlanificador(PlanificadorSimple planificador) {
+        this.planificador = planificador;
     }
 
     public void setAlmacen(Almacen almacen) {
@@ -102,8 +108,8 @@ public class FactoryController {
     // =====================
 
     public void configurarScheduler() {
-        if (!cadenas.isEmpty()) {
-            scheduler = new SchedulerImpl(cadenas);
+        if (!cadenas.isEmpty() && planificador != null) {
+            scheduler = new SchedulerImpl(cadenas, planificador);
         }
     }
 

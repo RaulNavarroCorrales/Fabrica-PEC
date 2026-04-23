@@ -40,4 +40,9 @@ public class Tapiceria {
     public void setMetrosCuadrados(double metrosCuadrados) {
         this.metrosCuadrados = metrosCuadrados;
     }
+
+    @Override
+    public String toString() {
+        return "Tapiceria{" + "tipo=" + tipo + ", color=" + color + ", metrosCuadrados=" + metrosCuadrados + '}';
+    }
 }

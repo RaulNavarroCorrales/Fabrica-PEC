@@ -1,8 +1,6 @@
 package vehiculos;
 
-import componentes.Motor;
-import componentes.Rueda;
-import componentes.Tapiceria;
+import componentes.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,12 +15,18 @@ public abstract class Vehiculo {
     private Motor motor;
     private Tapiceria tapiceria;
     private List<Rueda> ruedas;
+    private TipoMotor tipoMotor;
+    private TipoRueda tipoRueda;
+    private TipoTapiceria tipoTapiceria;
 
-    public Vehiculo(String color, int numPlazas, double tara, double pesoMaximoAutorizado) {
+    public Vehiculo(String color, int numPlazas, double tara, double pesoMaximoAutorizado, TipoMotor motor, TipoTapiceria tapiceria, TipoRueda rueda) {
         this.color = color;
         this.numPlazas = numPlazas;
         this.tara = tara;
         this.pesoMaximoAutorizado = pesoMaximoAutorizado;
+        this.tipoMotor = motor;
+        this.tipoTapiceria = tapiceria;
+        this.tipoRueda = rueda;
 
         this.estado = EstadoVehiculo.CHASIS;
         this.ruedas = new ArrayList<>();
@@ -52,6 +56,19 @@ public abstract class Vehiculo {
         this.tapiceria = tapiceria;
     }
 
+    public TipoTapiceria getTipoTapiceria() { return tipoTapiceria; }
+
+    public void setTipoTapiceria(TipoTapiceria tipoTapiceria) {this.tipoTapiceria = tipoTapiceria; }
+
+    public TipoRueda getTipoRueda() {return tipoRueda; }
+
+    public void setTipoRueda(TipoRueda tipoRueda) { this.tipoRueda = tipoRueda; }
+
+    public TipoMotor getTipoMotor() { return tipoMotor; }
+
+    public void setTipoMotor(TipoMotor tipoMotor) { this.tipoMotor = tipoMotor; }
+
+    public String getColor() { return color; }
     public void anadirRueda(Rueda rueda) {
         if (ruedas.size() < 4) {
             ruedas.add(rueda);

@@ -61,4 +61,9 @@ public class Rueda {
     public void setCodigoVelocidad(int codigoVelocidad) {
         this.codigoVelocidad = codigoVelocidad;
     }
+
+    @Override
+    public String toString() {
+        return "Rueda{" + "tipo=" + tipo + ", anchoMM=" + anchoMM + ", diametro=" + diametro + ", indiceCarga=" + indiceCarga + ", codigoVelocidad=" + codigoVelocidad + '}';
+    }
 }
