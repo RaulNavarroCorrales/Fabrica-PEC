@@ -5,31 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE">
-      <change afterPath="$PROJECT_DIR$/produccion/PlanificadorSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/almacen/AlmacenImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/AlmacenImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componentes/Rueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Rueda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componentes/Tapiceria.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Tapiceria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/almacen/ConfiguracionVehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/almacen/InventarioComponentes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Motor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/factory_main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/AlmacenImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/AlmacenImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Rueda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Rueda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Tapiceria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Tapiceria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/SchedulerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/SchedulerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/FactoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/FactoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/BiplazaDeportivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/BiplazaDeportivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Furgoneta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Furgoneta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Tursimo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produccion/CadenaMontaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/CadenaMontaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/PlanificadorSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/PlanificadorSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produccion/SchedulerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/SchedulerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistema/FactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/FactoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/BiplazaDeportivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/BiplazaDeportivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/Furgoneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Furgoneta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/Tursimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Turismo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehiculos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Vehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +117,8 @@
       <workItem from="1776182536785" duration="2867000" />
       <workItem from="1776185454776" duration="2595000" />
       <workItem from="1776780507171" duration="2673000" />
-      <workItem from="1776941281965" duration="7312000" />
+      <workItem from="1776941281965" duration="7408000" />
+      <workItem from="1777561288141" duration="2715000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -183,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776941360647</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UPDATE">
+      <option name="closed" value="true" />
+      <created>1776960923602</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776960923602</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

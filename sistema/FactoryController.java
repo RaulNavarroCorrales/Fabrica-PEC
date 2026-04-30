@@ -19,6 +19,7 @@ public class FactoryController {
     private List<Trabajador> trabajadores;
     private Scheduler scheduler;
     private PlanificadorSimple planificador;
+    private List<Vehiculo> pendientes = new ArrayList<>();
 
     public FactoryController() {
         this.almacen = new AlmacenImpl();
@@ -30,7 +31,7 @@ public class FactoryController {
     // CADENAS
     // =====================
 
-    public void añadirCadena(CadenaMontaje c) {
+    public void anadirCadena(CadenaMontaje c) {
         cadenas.add(c);
     }
 
@@ -43,11 +44,8 @@ public class FactoryController {
     // VEHICULOS
     // =====================
 
-    public void añadirVehiculoACadena(Vehiculo v) {
-        CadenaMontaje c = getPrimeraCadena();
-        if (c != null) {
-            c.ponerEnCola(v);
-        }
+    public void anadirVehiculoACadena(Vehiculo v) {
+        pendientes.add(v);
     }
 
     public void setPlanificador(PlanificadorSimple planificador) {
@@ -60,6 +58,10 @@ public class FactoryController {
 
     public List<CadenaMontaje> getCadenas() {
         return cadenas;
+    }
+
+    public List<Vehiculo> getPendientes() {
+        return pendientes;
     }
 
     public void setCadenas(List<CadenaMontaje> cadenas) {
@@ -109,7 +111,7 @@ public class FactoryController {
 
     public void configurarScheduler() {
         if (!cadenas.isEmpty() && planificador != null) {
-            scheduler = new SchedulerImpl(cadenas, planificador);
+            scheduler = new SchedulerImpl(cadenas, planificador, this);
         }
     }
 

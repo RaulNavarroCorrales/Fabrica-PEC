@@ -33,12 +33,12 @@ public class factory_main {
         // CADENA DE MONTAJE
         // =====================
         CadenaMontaje c1 = new CadenaMontaje("C1", fc.getAlmacen());
-        fc.añadirCadena(c1);
+        fc.anadirCadena(c1);
 
         // =====================
         // VEHÍCULOS (PLAN DE PRODUCCIÓN)
         // =====================
-        fc.añadirVehiculoACadena(
+        fc.anadirVehiculoACadena(
                 new BiplazaDeportivo(
                         "rojo",
                         1200,
@@ -49,7 +49,7 @@ public class factory_main {
                 )
         );
 
-        fc.añadirVehiculoACadena(
+        fc.anadirVehiculoACadena(
                 new BiplazaDeportivo(
                         "azul",
                         1100,

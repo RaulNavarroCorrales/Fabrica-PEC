@@ -3,6 +3,7 @@ package produccion;
 import almacen.Almacen;
 import vehiculos.Vehiculo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PlanificadorSimple {
@@ -20,16 +21,26 @@ public class PlanificadorSimple {
                 && almacen.getStockRueda(v.getTipoRueda()) >= 4;
     }
 
-    // 🔥 NUEVO: planificación automática
-    public void planificar(List<CadenaMontaje> cadenas) {
+    public void planificar(List<CadenaMontaje> cadenas, List<Vehiculo> pendientes) {
 
-        for (CadenaMontaje c : cadenas) {
+        if (cadenas.isEmpty()) return;
 
-            // si la cadena está “libre” o con poca carga
-            if (c.getCola().isEmpty()) {
-                continue;
+        CadenaMontaje cadena = cadenas.get(0); // de momento simple
+
+        List<Vehiculo> procesados = new ArrayList<>();
+
+        for (Vehiculo v : pendientes) {
+
+            if (puedeProducir(v)) {
+                cadena.ponerEnCola(v);
+                System.out.println("✔ Planificador: " + v.getColor() + " enviado a cadena");
+                procesados.add(v);
+            } else {
+                System.out.println("✖ Sin recursos para: " + v.getColor());
             }
         }
+
+        pendientes.removeAll(procesados);
     }
 
     // 🔥 MÉTODO IMPORTANTE: meter vehículo si se puede

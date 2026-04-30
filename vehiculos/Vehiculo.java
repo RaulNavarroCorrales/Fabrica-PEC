@@ -1,5 +1,6 @@
 package vehiculos;
 
+import almacen.Almacen;
 import componentes.*;
 
 import java.util.ArrayList;
@@ -30,6 +31,69 @@ public abstract class Vehiculo {
 
         this.estado = EstadoVehiculo.CHASIS;
         this.ruedas = new ArrayList<>();
+    }
+
+    public void anadirRueda(Rueda rueda) {
+        if (ruedas.size() < 4) {
+            ruedas.add(rueda);
+        } else {
+            System.out.println("Ya tiene 4 ruedas");
+        }
+    }
+
+    public void avanzar(Almacen almacen) {
+
+        switch (estado) {
+
+            case CHASIS:
+                if (almacen.retirarMotor(tipoMotor)) {
+                    this.motor = new Motor(tipoMotor, 2.0, 150, 4);
+                    estado = EstadoVehiculo.MOTOR;
+                    System.out.println("  Motor montado");
+                } else {
+                    System.out.println("  No hay motores disponibles");
+                }
+                break;
+
+            case MOTOR:
+                if (almacen.retirarTapiceria(tipoTapiceria)) {
+                    this.tapiceria = new Tapiceria(tipoTapiceria, "negro", 3.5);
+                    estado = EstadoVehiculo.TAPICERIA;
+                    System.out.println("  Tapicería montada");
+                } else {
+                    System.out.println("  No hay tapicería disponible");
+                }
+                break;
+
+            case TAPICERIA:
+                boolean ruedasOK = true;
+
+                for (int i = 0; i < 4; i++) {
+                    if (!almacen.retirarRueda(tipoRueda)) {
+                        ruedasOK = false;
+                        break;
+                    }
+                }
+
+                if (ruedasOK) {
+                    for (int i = 0; i < 4; i++) {
+                        ruedas.add(new Rueda(tipoRueda, 205, 16, 91, 240));
+                    }
+                    estado = EstadoVehiculo.RUEDAS;
+                    System.out.println("  Ruedas montadas");
+                } else {
+                    System.out.println("  No hay suficientes ruedas");
+                }
+                break;
+
+            case RUEDAS:
+                estado = EstadoVehiculo.COMPLETO;
+                System.out.println("  Vehículo terminado");
+                break;
+
+            case COMPLETO:
+                break;
+        }
     }
 
     public EstadoVehiculo getEstado() {
@@ -69,13 +133,6 @@ public abstract class Vehiculo {
     public void setTipoMotor(TipoMotor tipoMotor) { this.tipoMotor = tipoMotor; }
 
     public String getColor() { return color; }
-    public void anadirRueda(Rueda rueda) {
-        if (ruedas.size() < 4) {
-            ruedas.add(rueda);
-        } else {
-            System.out.println("Ya tiene 4 ruedas");
-        }
-    }
 
     public List<Rueda> getRuedas() {
         return ruedas;
