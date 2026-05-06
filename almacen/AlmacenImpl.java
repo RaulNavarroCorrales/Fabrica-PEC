@@ -37,17 +37,17 @@ public class AlmacenImpl implements Almacen {
     // =====================
 
     @Override
-    public void añadirMotor(TipoMotor tipo, int cantidad) {
+    public void anadirMotor(TipoMotor tipo, int cantidad) {
         motores.put(tipo, motores.getOrDefault(tipo, 0) + cantidad);
     }
 
     @Override
-    public void añadirTapiceria(TipoTapiceria tipo, int cantidad) {
+    public void anadirTapiceria(TipoTapiceria tipo, int cantidad) {
         tapicerias.put(tipo, tapicerias.getOrDefault(tipo, 0) + cantidad);
     }
 
     @Override
-    public void añadirRueda(TipoRueda tipo, int cantidad) {
+    public void anadirRueda(TipoRueda tipo, int cantidad) {
         ruedas.put(tipo, ruedas.getOrDefault(tipo, 0) + cantidad);
     }
 
@@ -57,7 +57,7 @@ public class AlmacenImpl implements Almacen {
 
     @Override
     public boolean retirarMotor(TipoMotor tipo) {
-        if (motores.get(tipo) != null){
+        if (motores.get(tipo) != null) {
             if (motores.get(tipo) > 0) {
                 motores.put(tipo, motores.get(tipo) - 1);
                 return true;

@@ -15,7 +15,7 @@ public class AdministradorSistema extends Trabajador {
         return 0;
     }
 
-    public int tiempoReinicioGestor(){
+    public int tiempoReinicioGestor() {
         return 2;
     }
 

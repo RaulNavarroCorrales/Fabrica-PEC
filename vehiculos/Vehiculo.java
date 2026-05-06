@@ -19,6 +19,7 @@ public abstract class Vehiculo {
     private TipoMotor tipoMotor;
     private TipoRueda tipoRueda;
     private TipoTapiceria tipoTapiceria;
+    private int segundoFinalizacion;
 
     public Vehiculo(String color, int numPlazas, double tara, double pesoMaximoAutorizado, TipoMotor motor, TipoTapiceria tapiceria, TipoRueda rueda) {
         this.color = color;
@@ -120,23 +121,40 @@ public abstract class Vehiculo {
         this.tapiceria = tapiceria;
     }
 
-    public TipoTapiceria getTipoTapiceria() { return tipoTapiceria; }
+    public TipoTapiceria getTipoTapiceria() {
+        return tipoTapiceria;
+    }
 
-    public void setTipoTapiceria(TipoTapiceria tipoTapiceria) {this.tipoTapiceria = tipoTapiceria; }
+    public void setTipoTapiceria(TipoTapiceria tipoTapiceria) {
+        this.tipoTapiceria = tipoTapiceria;
+    }
 
-    public TipoRueda getTipoRueda() {return tipoRueda; }
+    public TipoRueda getTipoRueda() {
+        return tipoRueda;
+    }
 
-    public void setTipoRueda(TipoRueda tipoRueda) { this.tipoRueda = tipoRueda; }
+    public void setTipoRueda(TipoRueda tipoRueda) {
+        this.tipoRueda = tipoRueda;
+    }
 
-    public TipoMotor getTipoMotor() { return tipoMotor; }
+    public TipoMotor getTipoMotor() {
+        return tipoMotor;
+    }
 
-    public void setTipoMotor(TipoMotor tipoMotor) { this.tipoMotor = tipoMotor; }
+    public void setTipoMotor(TipoMotor tipoMotor) {
+        this.tipoMotor = tipoMotor;
+    }
 
     public String getColor() { return color; }
 
     public List<Rueda> getRuedas() {
         return ruedas;
     }
+
+    public void setSegundoFinalizacion(int segundo) { this.segundoFinalizacion = segundo; }
+
+    public int getSegundoFinalizacion() { return segundoFinalizacion; }
+
     @Override
     public String toString() {
         return "Vehiculo{" +

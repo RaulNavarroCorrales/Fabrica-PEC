@@ -1,7 +1,5 @@
 package trabajadores;
 
-import java.util.Random;
-
 public class MecanicoCinta extends Trabajador {
 
     private int reparacionesRealizadas;
@@ -26,7 +24,7 @@ public class MecanicoCinta extends Trabajador {
         if (esEficiente()) {
             return 1;
         } else {
-            return Math.random()*4+2;
+            return Math.random() * 4 + 2;
         }
     }
 

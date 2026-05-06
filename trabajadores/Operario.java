@@ -25,7 +25,7 @@ public class Operario extends Trabajador {
     public double getTiempoTrabajo() {
         if (montajesRealizados > 10) {
             return 1;
-        }else {
+        } else {
             return 3;
         }
     }

@@ -1,9 +1,6 @@
 package produccion;
 
 import almacen.Almacen;
-import componentes.Motor;
-import componentes.Rueda;
-import componentes.Tapiceria;
 import vehiculos.EstadoVehiculo;
 import vehiculos.Vehiculo;
 
@@ -18,6 +15,9 @@ public class CadenaMontaje {
     private Queue<Vehiculo> cola;
     private List<Vehiculo> completados;
     private Almacen almacen;
+    private boolean averiada = false;
+    private int tiempoReparacionRestante = 0;
+    private int numeroAverias = 0;
 
     public CadenaMontaje(String id, Almacen almacen) {
         this.id = id;
@@ -34,7 +34,13 @@ public class CadenaMontaje {
         return cola.peek();
     }
 
-    public void avanzar() {
+    public void avanzar(int segundoActual) {
+
+        if (averiada) {
+            System.out.println("  Cadena averiada...");
+            reparar();
+            return;
+        }
 
         Vehiculo v = cola.peek();
 
@@ -47,15 +53,32 @@ public class CadenaMontaje {
 
         if (v.getEstado() == EstadoVehiculo.COMPLETO) {
             completados.add(v);
+            v.setSegundoFinalizacion(segundoActual);
             cola.poll();
         }
     }
 
     public void mostrarCola() {
-        System.out.println("Cola de vehículos:");
 
         for (Vehiculo v : cola) {
             System.out.println(v);
+        }
+    }
+
+    public void provocarAveria(int tiempoReparacion) {
+        averiada = true;
+        tiempoReparacionRestante = tiempoReparacion;
+        System.out.println("⚠ Cadena " + id + " averiada durante " + tiempoReparacion + " segundos");
+    }
+
+    public void reparar() {
+        if (averiada) {
+            tiempoReparacionRestante--;
+
+            if (tiempoReparacionRestante <= 0) {
+                averiada = false;
+                System.out.println("✔ Cadena " + id + " reparada");
+            }
         }
     }
 
@@ -69,5 +92,13 @@ public class CadenaMontaje {
 
     public List<Vehiculo> getCompletados() {
         return completados;
+    }
+
+    public int getNumeroAverias() {
+        return numeroAverias;
+    }
+
+    public void setNumeroAverias(int numeroAverias) {
+        this.numeroAverias = numeroAverias;
     }
 }

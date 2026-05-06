@@ -2,15 +2,19 @@ package sistema;
 
 import almacen.Almacen;
 import almacen.AlmacenImpl;
+import componentes.TipoMotor;
 import produccion.CadenaMontaje;
 import produccion.PlanificadorSimple;
 import produccion.Scheduler;
 import produccion.SchedulerImpl;
+import trabajadores.Operario;
 import trabajadores.Trabajador;
 import vehiculos.Vehiculo;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class FactoryController {
 
@@ -20,6 +24,7 @@ public class FactoryController {
     private Scheduler scheduler;
     private PlanificadorSimple planificador;
     private List<Vehiculo> pendientes = new ArrayList<>();
+    private Dashboard dashboard;
 
     public FactoryController() {
         this.almacen = new AlmacenImpl();
@@ -52,20 +57,16 @@ public class FactoryController {
         this.planificador = planificador;
     }
 
-    public void setAlmacen(Almacen almacen) {
-        this.almacen = almacen;
-    }
-
     public List<CadenaMontaje> getCadenas() {
         return cadenas;
     }
 
-    public List<Vehiculo> getPendientes() {
-        return pendientes;
-    }
-
     public void setCadenas(List<CadenaMontaje> cadenas) {
         this.cadenas = cadenas;
+    }
+
+    public List<Vehiculo> getPendientes() {
+        return pendientes;
     }
 
     public List<Trabajador> getTrabajadores() {
@@ -76,6 +77,10 @@ public class FactoryController {
         this.trabajadores = trabajadores;
     }
 
+    public void setDashboard(Dashboard dashboard) {
+        this.dashboard = dashboard;
+    }
+
     public Scheduler getScheduler() {
         return scheduler;
     }
@@ -83,12 +88,18 @@ public class FactoryController {
     public void setScheduler(Scheduler scheduler) {
         this.scheduler = scheduler;
     }
+
+    public void anadirTrabajador(Trabajador t) {
+        trabajadores.add(t);
+    }
 // =====================
     // TRABAJADORES
     // =====================
 
-    public void añadirTrabajador(Trabajador t) {
-        trabajadores.add(t);
+    public void notificarDashboard() {
+        if (dashboard != null) {
+            dashboard.mostrar();
+        }
     }
 
     public void mostrarTrabajadores() {
@@ -97,12 +108,16 @@ public class FactoryController {
         }
     }
 
+    public Almacen getAlmacen() {
+        return almacen;
+    }
+
     // =====================
     // ALMACEN
     // =====================
 
-    public Almacen getAlmacen() {
-        return almacen;
+    public void setAlmacen(Almacen almacen) {
+        this.almacen = almacen;
     }
 
     // =====================
@@ -134,5 +149,73 @@ public class FactoryController {
         for (Vehiculo v : c.getCompletados()) {
             System.out.println(v);
         }
+    }
+
+    //ESTADÍSTICAS:
+    public void listarOperariosPorProductividad(boolean soloEficientes) {
+
+        System.out.println("\n=== OPERARIOS ===");
+
+        trabajadores.stream()
+                .filter(t -> t instanceof Operario)
+                .map(t -> (Operario) t)
+                .filter(o -> !soloEficientes || o.esEficiente())
+                .sorted((o1, o2) -> o1.getNombre().compareTo(o2.getNombre()))
+                .forEach(System.out::println);
+    }
+
+    public void listarVehiculosPorTipoMotor(TipoMotor tipo) {
+
+        System.out.println("\n=== VEHÍCULOS POR MOTOR: " + tipo + " ===");
+
+        for (CadenaMontaje c : cadenas) {
+            for (Vehiculo v : c.getCompletados()) {
+
+                if (v.getTipoMotor() == tipo) {
+                    System.out.println(v);
+                }
+            }
+        }
+    }
+
+    public void configuracionesMasUsadas() {
+
+        System.out.println("\n=== CONFIGURACIONES MÁS USADAS ===");
+
+        Map<String, Integer> contador = new HashMap<>();
+
+        for (CadenaMontaje c : cadenas) {
+            for (Vehiculo v : c.getCompletados()) {
+
+                String clave = v.getTipoMotor() + "-" +
+                        v.getTipoTapiceria() + "-" +
+                        v.getTipoRueda();
+
+                contador.put(clave, contador.getOrDefault(clave, 0) + 1);
+            }
+        }
+
+        contador.entrySet().stream()
+                .sorted((a, b) -> b.getValue() - a.getValue())
+                .forEach(e -> System.out.println(e.getKey() + " → " + e.getValue()));
+    }
+
+    public void listarProduccionPorTiempo(int segundo) {
+
+        System.out.println("\n=== PRODUCCIÓN EN SEGUNDO " + segundo + " ===");
+
+        for (CadenaMontaje c : cadenas) {
+            for (Vehiculo v : c.getCompletados()) {
+
+                if (v.getSegundoFinalizacion() == segundo) {
+                    System.out.println(v);
+                }
+            }
+        }
+    }
+
+    public void mostrarEstadisticas() {
+        listarOperariosPorProductividad(false);
+        configuracionesMasUsadas();
     }
 }

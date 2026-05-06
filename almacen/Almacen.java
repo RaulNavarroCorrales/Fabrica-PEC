@@ -6,11 +6,11 @@ import componentes.TipoTapiceria;
 
 public interface Almacen {
 
-    void añadirMotor(TipoMotor tipo, int cantidad);
+    void anadirMotor(TipoMotor tipo, int cantidad);
 
-    void añadirTapiceria(TipoTapiceria tipo, int cantidad);
+    void anadirTapiceria(TipoTapiceria tipo, int cantidad);
 
-    void añadirRueda(TipoRueda tipo, int cantidad);
+    void anadirRueda(TipoRueda tipo, int cantidad);
 
     boolean retirarMotor(TipoMotor tipo);
 
