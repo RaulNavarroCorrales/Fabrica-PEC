@@ -1,19 +1,20 @@
 package produccion;
-import java.util.Random;
+
 import sistema.FactoryController;
 import trabajadores.AdministradorSistema;
 import trabajadores.MecanicoCinta;
 import trabajadores.Trabajador;
 
 import java.util.List;
+import java.util.Random;
 
 public class SchedulerImpl implements Scheduler {
 
+    boolean sistemaCaido = false;
+    int tiempoRecuperacion = 0;
     private List<CadenaMontaje> cadenas;
     private PlanificadorSimple planificador;
     private FactoryController controller;
-    boolean sistemaCaido = false;
-    int tiempoRecuperacion = 0;
 
     public SchedulerImpl(List<CadenaMontaje> cadenas, PlanificadorSimple planificador, FactoryController controller) {
         this.cadenas = cadenas;

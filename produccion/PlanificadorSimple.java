@@ -25,16 +25,34 @@ public class PlanificadorSimple {
 
         if (cadenas.isEmpty()) return;
 
-        CadenaMontaje cadena = cadenas.get(0); // de momento simple
-
         List<Vehiculo> procesados = new ArrayList<>();
+
+        int indiceCadena = 0;
 
         for (Vehiculo v : pendientes) {
 
             if (puedeProducir(v)) {
+
+                CadenaMontaje cadena = cadenas.get(indiceCadena);
+
                 cadena.ponerEnCola(v);
-                System.out.println("✔ Planificador: " + v.getColor() + " enviado a cadena");
+
+                System.out.println(
+                        "✔ Planificador: "
+                                + v.getColor()
+                                + " enviado a "
+                                + cadena.getId()
+                );
+
                 procesados.add(v);
+
+                // siguiente cadena
+                indiceCadena++;
+
+                if (indiceCadena >= cadenas.size()) {
+                    indiceCadena = 0;
+                }
+
             } else {
                 System.out.println("✖ Sin recursos para: " + v.getColor());
             }

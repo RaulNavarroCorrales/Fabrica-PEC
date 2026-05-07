@@ -3,6 +3,8 @@ package sistema;
 import almacen.Almacen;
 import almacen.AlmacenImpl;
 import componentes.TipoMotor;
+import componentes.TipoRueda;
+import componentes.TipoTapiceria;
 import produccion.CadenaMontaje;
 import produccion.PlanificadorSimple;
 import produccion.Scheduler;
@@ -45,18 +47,6 @@ public class FactoryController {
         return cadenas.get(0);
     }
 
-    // =====================
-    // VEHICULOS
-    // =====================
-
-    public void anadirVehiculoACadena(Vehiculo v) {
-        pendientes.add(v);
-    }
-
-    public void setPlanificador(PlanificadorSimple planificador) {
-        this.planificador = planificador;
-    }
-
     public List<CadenaMontaje> getCadenas() {
         return cadenas;
     }
@@ -65,8 +55,43 @@ public class FactoryController {
         this.cadenas = cadenas;
     }
 
+    // =====================
+    // VEHÍCULOS
+    // =====================
+
+    public void anadirVehiculoACadena(Vehiculo v) {
+        pendientes.add(v);
+    }
+
     public List<Vehiculo> getPendientes() {
         return pendientes;
+    }
+
+    public void mostrarVehiculosCompletados() {
+
+        System.out.println("=== VEHICULOS COMPLETADOS ===");
+
+        boolean encontrados = false;
+
+        for (CadenaMontaje c : cadenas) {
+
+            for (Vehiculo v : c.getCompletados()) {
+                System.out.println(v);
+                encontrados = true;
+            }
+        }
+
+        if (!encontrados) {
+            System.out.println("No hay vehículos completados.");
+        }
+    }
+
+    // =====================
+    // TRABAJADORES
+    // =====================
+
+    public void anadirTrabajador(Trabajador t) {
+        trabajadores.add(t);
     }
 
     public List<Trabajador> getTrabajadores() {
@@ -77,9 +102,57 @@ public class FactoryController {
         this.trabajadores = trabajadores;
     }
 
+    public void mostrarTrabajadores() {
+
+        System.out.println("\n=== TRABAJADORES ===");
+
+        for (Trabajador t : trabajadores) {
+            System.out.println(t);
+        }
+    }
+
+    // =====================
+    // DASHBOARD
+    // =====================
+
+    public Dashboard getDashboard() {
+        return dashboard;
+    }
+
     public void setDashboard(Dashboard dashboard) {
         this.dashboard = dashboard;
     }
+
+    public void notificarDashboard() {
+
+        if (dashboard != null) {
+            dashboard.mostrar();
+        }
+    }
+
+    // =====================
+    // ALMACÉN
+    // =====================
+
+    public Almacen getAlmacen() {
+        return almacen;
+    }
+
+    public void setAlmacen(Almacen almacen) {
+        this.almacen = almacen;
+    }
+
+    // =====================
+    // PLANIFICADOR
+    // =====================
+
+    public void setPlanificador(PlanificadorSimple planificador) {
+        this.planificador = planificador;
+    }
+
+    // =====================
+    // SCHEDULER
+    // =====================
 
     public Scheduler getScheduler() {
         return scheduler;
@@ -89,69 +162,24 @@ public class FactoryController {
         this.scheduler = scheduler;
     }
 
-    public void anadirTrabajador(Trabajador t) {
-        trabajadores.add(t);
-    }
-// =====================
-    // TRABAJADORES
-    // =====================
-
-    public void notificarDashboard() {
-        if (dashboard != null) {
-            dashboard.mostrar();
-        }
-    }
-
-    public void mostrarTrabajadores() {
-        for (Trabajador t : trabajadores) {
-            System.out.println(t);
-        }
-    }
-
-    public Almacen getAlmacen() {
-        return almacen;
-    }
-
-    // =====================
-    // ALMACEN
-    // =====================
-
-    public void setAlmacen(Almacen almacen) {
-        this.almacen = almacen;
-    }
-
-    // =====================
-    // SCHEDULER
-    // =====================
-
     public void configurarScheduler() {
+
         if (!cadenas.isEmpty() && planificador != null) {
             scheduler = new SchedulerImpl(cadenas, planificador, this);
         }
     }
 
     public void ejecutarSimulacion(int segundos) {
+
         if (scheduler != null) {
             scheduler.avanzarTiempo(segundos);
         }
     }
 
-    public void mostrarVehiculosCompletados() {
-        CadenaMontaje c = getPrimeraCadena();
+    // =========================================================
+    // ESTADÍSTICAS Y LISTADOS
+    // =========================================================
 
-        if (c == null) {
-            System.out.println("No hay cadena");
-            return;
-        }
-
-        System.out.println("=== VEHICULOS COMPLETADOS ===");
-
-        for (Vehiculo v : c.getCompletados()) {
-            System.out.println(v);
-        }
-    }
-
-    //ESTADÍSTICAS:
     public void listarOperariosPorProductividad(boolean soloEficientes) {
 
         System.out.println("\n=== OPERARIOS ===");
@@ -164,17 +192,69 @@ public class FactoryController {
                 .forEach(System.out::println);
     }
 
-    public void listarVehiculosPorTipoMotor(TipoMotor tipo) {
+    public void listarVehiculosPorMotor(TipoMotor tipo) {
 
-        System.out.println("\n=== VEHÍCULOS POR MOTOR: " + tipo + " ===");
+        System.out.println("\n=== VEHÍCULOS CON MOTOR " + tipo + " ===");
+
+        boolean encontrados = false;
 
         for (CadenaMontaje c : cadenas) {
+
             for (Vehiculo v : c.getCompletados()) {
 
                 if (v.getTipoMotor() == tipo) {
                     System.out.println(v);
+                    encontrados = true;
                 }
             }
+        }
+
+        if (!encontrados) {
+            System.out.println("No hay vehículos con ese tipo de motor.");
+        }
+    }
+
+    public void listarVehiculosPorTapiceria(TipoTapiceria tipo) {
+
+        System.out.println("\n=== VEHÍCULOS CON TAPICERÍA " + tipo + " ===");
+
+        boolean encontrados = false;
+
+        for (CadenaMontaje c : cadenas) {
+
+            for (Vehiculo v : c.getCompletados()) {
+
+                if (v.getTipoTapiceria() == tipo) {
+                    System.out.println(v);
+                    encontrados = true;
+                }
+            }
+        }
+
+        if (!encontrados) {
+            System.out.println("No hay vehículos con ese tipo de tapicería.");
+        }
+    }
+
+    public void listarVehiculosPorRueda(TipoRueda tipo) {
+
+        System.out.println("\n=== VEHÍCULOS CON RUEDAS " + tipo + " ===");
+
+        boolean encontrados = false;
+
+        for (CadenaMontaje c : cadenas) {
+
+            for (Vehiculo v : c.getCompletados()) {
+
+                if (v.getTipoRueda() == tipo) {
+                    System.out.println(v);
+                    encontrados = true;
+                }
+            }
+        }
+
+        if (!encontrados) {
+            System.out.println("No hay vehículos con ese tipo de rueda.");
         }
     }
 
@@ -185,11 +265,13 @@ public class FactoryController {
         Map<String, Integer> contador = new HashMap<>();
 
         for (CadenaMontaje c : cadenas) {
+
             for (Vehiculo v : c.getCompletados()) {
 
-                String clave = v.getTipoMotor() + "-" +
-                        v.getTipoTapiceria() + "-" +
-                        v.getTipoRueda();
+                String clave =
+                        v.getTipoMotor() + " - " +
+                                v.getTipoTapiceria() + " - " +
+                                v.getTipoRueda();
 
                 contador.put(clave, contador.getOrDefault(clave, 0) + 1);
             }
@@ -197,25 +279,49 @@ public class FactoryController {
 
         contador.entrySet().stream()
                 .sorted((a, b) -> b.getValue() - a.getValue())
-                .forEach(e -> System.out.println(e.getKey() + " → " + e.getValue()));
+                .forEach(e ->
+                        System.out.println(e.getKey() + " -> " + e.getValue())
+                );
     }
 
     public void listarProduccionPorTiempo(int segundo) {
 
         System.out.println("\n=== PRODUCCIÓN EN SEGUNDO " + segundo + " ===");
 
+        boolean encontrados = false;
+
         for (CadenaMontaje c : cadenas) {
+
             for (Vehiculo v : c.getCompletados()) {
 
                 if (v.getSegundoFinalizacion() == segundo) {
                     System.out.println(v);
+                    encontrados = true;
                 }
             }
+        }
+
+        if (!encontrados) {
+            System.out.println("No hubo producción en ese segundo.");
         }
     }
 
     public void mostrarEstadisticas() {
+
         listarOperariosPorProductividad(false);
+
+        listarVehiculosPorMotor(TipoMotor.GASOLINA);
+        listarVehiculosPorMotor(TipoMotor.ELECTRICO);
+        listarVehiculosPorMotor(TipoMotor.HIBRIDO);
+
+        listarVehiculosPorTapiceria(TipoTapiceria.CUERO);
+        listarVehiculosPorTapiceria(TipoTapiceria.TELA);
+        listarVehiculosPorTapiceria(TipoTapiceria.ALCANTARA);
+
+        listarVehiculosPorRueda(TipoRueda.DEPORTIVO);
+        listarVehiculosPorRueda(TipoRueda.NORMAL);
+        listarVehiculosPorRueda(TipoRueda.TODOTERRENO);
+
         configuracionesMasUsadas();
     }
 }

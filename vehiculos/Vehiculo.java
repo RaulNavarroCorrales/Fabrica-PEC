@@ -145,15 +145,21 @@ public abstract class Vehiculo {
         this.tipoMotor = tipoMotor;
     }
 
-    public String getColor() { return color; }
+    public String getColor() {
+        return color;
+    }
 
     public List<Rueda> getRuedas() {
         return ruedas;
     }
 
-    public void setSegundoFinalizacion(int segundo) { this.segundoFinalizacion = segundo; }
+    public int getSegundoFinalizacion() {
+        return segundoFinalizacion;
+    }
 
-    public int getSegundoFinalizacion() { return segundoFinalizacion; }
+    public void setSegundoFinalizacion(int segundo) {
+        this.segundoFinalizacion = segundo;
+    }
 
     @Override
     public String toString() {

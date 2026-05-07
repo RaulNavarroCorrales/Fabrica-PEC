@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/factory_main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produccion/CadenaMontaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/CadenaMontaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/Tursimo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Turismo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/Almacen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/Almacen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/AlmacenImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/AlmacenImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/ConfiguracionVehiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/InventarioComponentes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Motor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/PlanificadorSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/PlanificadorSimple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/SchedulerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/SchedulerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/FactoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/FactoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/MecanicoCinta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/MecanicoCinta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,29 +60,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rauln/Desktop/ProyectosBJ/Fabrica-PEC&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/rauln/Desktop/IngInformatica/POO/ProyectosBJ/Fabrica-PEC",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="produccion" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="main.factory_main" />
@@ -86,8 +100,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.29188.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.29188.11" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.29188.36" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.29188.36" />
       </set>
     </attachedChunks>
   </component>
@@ -107,7 +121,9 @@
       <workItem from="1776182536785" duration="2867000" />
       <workItem from="1776185454776" duration="2595000" />
       <workItem from="1776780507171" duration="2673000" />
-      <workItem from="1776941281965" duration="3246000" />
+      <workItem from="1776941281965" duration="7408000" />
+      <workItem from="1777561288141" duration="3411000" />
+      <workItem from="1778080421536" duration="3969000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -157,7 +173,31 @@
       <option name="project" value="LOCAL" />
       <updated>1776941360647</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UPDATE">
+      <option name="closed" value="true" />
+      <created>1776960923602</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776960923602</updated>
+    </task>
+    <task id="LOCAL-00008" summary="UPDATE">
+      <option name="closed" value="true" />
+      <created>1777567652776</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777567652776</updated>
+    </task>
+    <task id="LOCAL-00009" summary="UPDATE">
+      <option name="closed" value="true" />
+      <created>1778084403052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778084403052</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

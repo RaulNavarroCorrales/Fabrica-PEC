@@ -28,6 +28,10 @@ public abstract class Trabajador {
         return nombre;
     }
 
+    public String getApellidos() {
+        return apellidos;
+    }
+
     public String getDni() {
         return dni;
     }
