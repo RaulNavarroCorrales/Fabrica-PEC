@@ -96,7 +96,6 @@ public class factory_main {
 
                 case 5:
                     System.out.println("""
-                            
                             Tipo motor:
                             1. GASOLINA
                             2. ELECTRICO
