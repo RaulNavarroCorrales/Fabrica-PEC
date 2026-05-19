@@ -1,6 +1,5 @@
 package componentes;
 
-
 /**
  * Write a description of class Motor here.
  *
@@ -9,7 +8,6 @@ package componentes;
  */
 public class Motor {
     private TipoMotor tipo;
-
     private double cilindrada;
     private int potencia;
     private int numCilindros;

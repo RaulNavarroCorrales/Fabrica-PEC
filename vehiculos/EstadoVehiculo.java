@@ -1,6 +1,5 @@
 package vehiculos;
 
-
 /**
  * Enumeration class EstadoVehiculo - write a description of the enum class here
  *

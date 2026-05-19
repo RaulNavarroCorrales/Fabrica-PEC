@@ -4,10 +4,8 @@ public class MecanicoCinta extends Trabajador {
 
     private int reparacionesRealizadas;
 
-    public MecanicoCinta(String nombre, String apellidos, String dni,
-                         String direccion, long nss, int reparaciones) {
-        super(nombre, apellidos, dni, direccion, nss,
-                "MecanicoCinta", 1300.0, "2026-01-01");
+    public MecanicoCinta(String nombre, String apellidos, String dni, String direccion, long nss, int reparaciones) {
+        super(nombre, apellidos, dni, direccion, nss, "MecanicoCinta", 1300.0, "2026-01-01");
         this.reparacionesRealizadas = reparaciones;
     }
 

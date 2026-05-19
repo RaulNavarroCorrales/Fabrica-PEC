@@ -16,35 +16,27 @@ public class DashboardImpl implements Dashboard {
 
     @Override
     public void mostrar() {
-
         System.out.println("\n===== DASHBOARD =====");
-
-        // =====================
-        // CADENAS DE MONTAJE
-        // =====================
         if (controller.getCadenas().isEmpty()) {
             System.out.println("No hay cadenas de montaje");
         } else {
             int i = 1;
-
             for (CadenaMontaje c : controller.getCadenas()) {
                 System.out.println("\nCadena " + i + ":");
 
                 if (c.getCola().isEmpty()) {
-                    System.out.println("  Sin vehículos en cola");
+                    System.out.println("Sin vehículos en cola");
                 } else {
                     for (Vehiculo v : c.getCola()) {
                         System.out.println("  " + v);
                     }
                 }
-
+                // Pasar a la siguiente cadena
                 i++;
             }
         }
 
-        // =====================
-        // STOCK
-        // =====================
+        // Mostrar stock general de la fábrica
         System.out.println("\n--- STOCK ---");
         System.out.println("\n--- MOTORES ---");
         System.out.println("Motores gasolina: " +

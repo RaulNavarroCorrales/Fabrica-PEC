@@ -18,7 +18,7 @@ public class AlmacenImpl implements Almacen {
         tapicerias = new HashMap<>();
         ruedas = new HashMap<>();
 
-        // Inicializar todo a 0 (MUY IMPORTANTE)
+        // Inicializar todo a 0
         for (TipoMotor t : TipoMotor.values()) {
             motores.put(t, 0);
         }
@@ -32,10 +32,7 @@ public class AlmacenImpl implements Almacen {
         }
     }
 
-    // =====================
-    // AÑADIR
-    // =====================
-
+    // Operaciones de almacen
     @Override
     public void anadirMotor(TipoMotor tipo, int cantidad) {
         motores.put(tipo, motores.getOrDefault(tipo, 0) + cantidad);
@@ -50,10 +47,6 @@ public class AlmacenImpl implements Almacen {
     public void anadirRueda(TipoRueda tipo, int cantidad) {
         ruedas.put(tipo, ruedas.getOrDefault(tipo, 0) + cantidad);
     }
-
-    // =====================
-    // RETIRAR
-    // =====================
 
     @Override
     public boolean retirarMotor(TipoMotor tipo) {
@@ -83,10 +76,6 @@ public class AlmacenImpl implements Almacen {
         }
         return false;
     }
-
-    // =====================
-    // CONSULTAS
-    // =====================
 
     @Override
     public int getStockMotor(TipoMotor tipo) {

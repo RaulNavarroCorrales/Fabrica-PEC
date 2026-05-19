@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE - 07/05/26">
+    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE - 18/05/26">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/almacen/AlmacenImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/AlmacenImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Motor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/factory_main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/CadenaMontaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/CadenaMontaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/PlanificadorSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/Planificador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/SchedulerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/SchedulerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/FactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/FactoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/MecanicoCinta.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/MecanicoCinta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/Operario.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/Operario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/Trabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/Trabajador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +60,65 @@
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="9.191249071949903E-52" />
+      <entry key="MS500" value="6.204044539876873E-11" />
+      <entry key="S2" value="0.0028065238028778783" />
+      <entry key="S5" value="0.09539143856963737" />
+      <entry key="S10" value="0.3160573482594001" />
+      <entry key="S30" value="0.8697770835291877" />
+      <entry key="S60" value="1.262451368508181" />
+      <entry key="M2" value="1.5720217946337718" />
+      <entry key="M5" value="1.931356070307811" />
+      <entry key="M10" value="2.4317098484696786" />
+      <entry key="M15" value="2.834800596847806" />
+      <entry key="M30" value="3.562337688917953" />
+      <entry key="H1" value="4.15230600056845" />
+      <entry key="H2" value="4.536635752859003" />
+      <entry key="H4" value="4.757323440649972" />
+      <entry key="D1" value="4.95792086715697" />
+      <entry key="W1" value="4.993947235290681" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000016782685" />
+      <entry key="S2" value="1.0170866027523382" />
+      <entry key="S5" value="1.294145253056032" />
+      <entry key="S10" value="1.7654637669482787" />
+      <entry key="S30" value="2.4514448422733137" />
+      <entry key="S60" value="2.703707045189287" />
+      <entry key="M2" value="2.853417208308913" />
+      <entry key="M5" value="3.257003811831524" />
+      <entry key="M10" value="4.096438026958772" />
+      <entry key="M15" value="4.6979256160184715" />
+      <entry key="M30" value="5.610771603039937" />
+      <entry key="H1" value="6.232539528952174" />
+      <entry key="H2" value="6.596068448959506" />
+      <entry key="H4" value="6.79271126692437" />
+      <entry key="D1" value="6.964688231027142" />
+      <entry key="W1" value="6.994936434066029" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.6017405450791426E-5" />
+      <entry key="MS500" value="0.10987994885678812" />
+      <entry key="S2" value="0.5894879443213206" />
+      <entry key="S5" value="1.1365860671638481" />
+      <entry key="S10" value="1.8966873027896305" />
+      <entry key="S30" value="3.2222790995843877" />
+      <entry key="S60" value="3.905601867330789" />
+      <entry key="M2" value="4.390952902393491" />
+      <entry key="M5" value="5.171336876190741" />
+      <entry key="M10" value="6.516544444942934" />
+      <entry key="M15" value="7.523469646191845" />
+      <entry key="M30" value="9.16729649106542" />
+      <entry key="H1" value="10.381526679740508" />
+      <entry key="H2" value="11.13092266642217" />
+      <entry key="H4" value="11.549110687975034" />
+      <entry key="D1" value="11.922450226998343" />
+      <entry key="W1" value="11.98886085087226" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -77,7 +149,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -99,8 +171,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.29188.36" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.29188.36" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
       </set>
     </attachedChunks>
   </component>
@@ -125,7 +197,13 @@
       <workItem from="1778080421536" duration="3969000" />
       <workItem from="1778151976799" duration="3385000" />
       <workItem from="1778168484989" duration="380000" />
-      <workItem from="1778836405274" duration="787000" />
+      <workItem from="1778836405274" duration="2928000" />
+      <workItem from="1779015029110" duration="877000" />
+      <workItem from="1779112657656" duration="767000" />
+      <workItem from="1779113527267" duration="1195000" />
+      <workItem from="1779116260185" duration="39000" />
+      <workItem from="1779126732282" duration="2570000" />
+      <workItem from="1779182513208" duration="5346000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -215,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778157293598</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="UPDATE - 18/05/26">
+      <option name="closed" value="true" />
+      <created>1779112688389</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1779112688390</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +336,8 @@
     <MESSAGE value="UPDATE-Actualización del flujo" />
     <MESSAGE value="UPDATE" />
     <MESSAGE value="UPDATE - 07/05/26" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - 07/05/26" />
+    <MESSAGE value="UPDATE - 18/05/26" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - 18/05/26" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

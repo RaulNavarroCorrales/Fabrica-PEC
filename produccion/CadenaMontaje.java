@@ -1,6 +1,7 @@
 package produccion;
 
 import almacen.Almacen;
+import trabajadores.Operario;
 import vehiculos.EstadoVehiculo;
 import vehiculos.Vehiculo;
 
@@ -10,7 +11,6 @@ import java.util.List;
 import java.util.Queue;
 
 public class CadenaMontaje {
-
     private String id;
     private Queue<Vehiculo> cola;
     private List<Vehiculo> completados;
@@ -30,11 +30,7 @@ public class CadenaMontaje {
         cola.add(v);
     }
 
-    public Vehiculo verPrimero() {
-        return cola.peek();
-    }
-
-    public void avanzar(int segundoActual) {
+    public void avanzar(int segundoActual, Operario operario) {
 
         if (averiada) {
             System.out.println("  Cadena averiada...");
@@ -55,11 +51,14 @@ public class CadenaMontaje {
             completados.add(v);
             v.setSegundoFinalizacion(segundoActual);
             cola.poll();
+            if (operario != null) {
+                operario.incrementarMontajes();
+            }
         }
     }
 
+    // Metodo para mostrar la cola de vehiculos finalmente no utilizado en la simulación
     public void mostrarCola() {
-
         for (Vehiculo v : cola) {
             System.out.println(v);
         }
@@ -68,7 +67,7 @@ public class CadenaMontaje {
     public void provocarAveria(int tiempoReparacion) {
         averiada = true;
         tiempoReparacionRestante = tiempoReparacion;
-        System.out.println("⚠ Cadena " + id + " averiada durante " + tiempoReparacion + " segundos");
+        System.out.println(" Cadena " + id + " averiada durante " + tiempoReparacion + " segundos");
     }
 
     public void reparar() {
@@ -77,7 +76,7 @@ public class CadenaMontaje {
 
             if (tiempoReparacionRestante <= 0) {
                 averiada = false;
-                System.out.println("✔ Cadena " + id + " reparada");
+                System.out.println(" Cadena " + id + " reparada");
             }
         }
     }

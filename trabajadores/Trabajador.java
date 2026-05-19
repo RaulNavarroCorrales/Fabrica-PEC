@@ -10,8 +10,7 @@ public abstract class Trabajador {
     private double salario;
     private String fechaIngreso;
 
-    public Trabajador(String nombre, String apellidos, String dni, String direccion,
-                      long numeroSeguroSocial, String puesto, double salario, String fechaIngreso) {
+    public Trabajador(String nombre, String apellidos, String dni, String direccion, long numeroSeguroSocial, String puesto, double salario, String fechaIngreso) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;
@@ -26,14 +25,6 @@ public abstract class Trabajador {
 
     public String getNombre() {
         return nombre;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public String getDni() {
-        return dni;
     }
 
     @Override
