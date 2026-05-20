@@ -18,6 +18,9 @@ import vehiculos.Furgoneta;
 import vehiculos.Turismo;
 import java.util.Scanner;
 
+/**
+ * @author Raul
+ */
 public class factory_main {
     public static final Scanner sc = new Scanner(System.in);
     public static final FactoryController fc = new FactoryController();
@@ -95,70 +98,17 @@ public class factory_main {
         factory_main.fc.configurarScheduler();
     }
 
+    // Cargar vehículos iniciales para la simulación
     private static void cargarVehiculos() {
-
-        factory_main.fc.anadirVehiculoACadena(new BiplazaDeportivo(
-                "rojo", 1200, 1800,
-                TipoMotor.GASOLINA,
-                TipoTapiceria.CUERO,
-                TipoRueda.DEPORTIVO
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new Turismo(
-                "azul", 1400, 2000,
-                TipoMotor.ELECTRICO,
-                TipoTapiceria.TELA,
-                TipoRueda.NORMAL
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new Furgoneta(
-                "blanco", 3, 1800, 2500,
-                TipoMotor.HIBRIDO,
-                TipoTapiceria.ALCANTARA,
-                TipoRueda.TODOTERRENO
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new BiplazaDeportivo(
-                "negro", 1250, 1850,
-                TipoMotor.GASOLINA,
-                TipoTapiceria.CUERO,
-                TipoRueda.DEPORTIVO
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new Turismo(
-                "gris", 1450, 2100,
-                TipoMotor.ELECTRICO,
-                TipoTapiceria.TELA,
-                TipoRueda.NORMAL
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new Furgoneta(
-                "verde", 4, 1850, 2550,
-                TipoMotor.HIBRIDO,
-                TipoTapiceria.ALCANTARA,
-                TipoRueda.TODOTERRENO
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new BiplazaDeportivo(
-                "amarillo", 1180, 1750,
-                TipoMotor.GASOLINA,
-                TipoTapiceria.CUERO,
-                TipoRueda.DEPORTIVO
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new Turismo(
-                "blanco", 1380, 1950,
-                TipoMotor.ELECTRICO,
-                TipoTapiceria.TELA,
-                TipoRueda.NORMAL
-        ));
-
-        factory_main.fc.anadirVehiculoACadena(new Furgoneta(
-                "azul oscuro", 3, 1900, 2600,
-                TipoMotor.HIBRIDO,
-                TipoTapiceria.ALCANTARA,
-                TipoRueda.TODOTERRENO
-        ));
+        factory_main.fc.anadirVehiculoACadena(new BiplazaDeportivo("rojo", 1200, 1800, TipoMotor.GASOLINA, TipoTapiceria.CUERO, TipoRueda.DEPORTIVO));
+        factory_main.fc.anadirVehiculoACadena(new Turismo("azul", 1400, 2000, TipoMotor.ELECTRICO, TipoTapiceria.TELA, TipoRueda.NORMAL));
+        factory_main.fc.anadirVehiculoACadena(new Furgoneta("blanco", 3, 1800, 2500, TipoMotor.HIBRIDO, TipoTapiceria.ALCANTARA, TipoRueda.TODOTERRENO));
+        factory_main.fc.anadirVehiculoACadena(new BiplazaDeportivo("negro", 1250, 1850, TipoMotor.GASOLINA, TipoTapiceria.CUERO, TipoRueda.DEPORTIVO));
+        factory_main.fc.anadirVehiculoACadena(new Turismo("gris", 1450, 2100, TipoMotor.ELECTRICO, TipoTapiceria.TELA, TipoRueda.NORMAL));
+        factory_main.fc.anadirVehiculoACadena(new Furgoneta("verde", 4, 1850, 2550, TipoMotor.HIBRIDO, TipoTapiceria.ALCANTARA, TipoRueda.TODOTERRENO));
+        factory_main.fc.anadirVehiculoACadena(new BiplazaDeportivo("amarillo", 1180, 1750, TipoMotor.GASOLINA, TipoTapiceria.CUERO, TipoRueda.DEPORTIVO));
+        factory_main.fc.anadirVehiculoACadena(new Turismo("blanco", 1380, 1950, TipoMotor.ELECTRICO, TipoTapiceria.TELA, TipoRueda.NORMAL));
+        factory_main.fc.anadirVehiculoACadena(new Furgoneta("azul oscuro", 3, 1900, 2600, TipoMotor.HIBRIDO, TipoTapiceria.ALCANTARA, TipoRueda.TODOTERRENO));
     }
 
     public static void menu(){
@@ -279,7 +229,6 @@ public class factory_main {
                 default:
                     System.out.println("Opción inválida");
             }
-
         } while (opcion != 0);
     }
 }
