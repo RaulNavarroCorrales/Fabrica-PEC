@@ -16,7 +16,6 @@ import trabajadores.Operario;
 import vehiculos.BiplazaDeportivo;
 import vehiculos.Furgoneta;
 import vehiculos.Turismo;
-
 import java.util.Scanner;
 
 public class factory_main {
@@ -30,6 +29,7 @@ public class factory_main {
 
         fc.setAlmacen(new AlmacenImpl());
 
+        // Cargar datos iniciales
         cargarStockInicial();
         cargarTrabajadores();
         cargarCadenas();
@@ -179,11 +179,10 @@ public class factory_main {
             System.out.println("10. Mostrar todo");
             System.out.println("0. Salir");
             System.out.print("Seleccione opción: ");
-
+            // Repetir el menu hasta pulsar 0
             opcion = sc.nextInt();
 
             switch (opcion) {
-
                 case 1:
                     System.out.println("\n--- VEHÍCULOS COMPLETADOS ---");
                     fc.mostrarVehiculosCompletados();

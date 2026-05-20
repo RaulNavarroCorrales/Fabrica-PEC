@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=factory_main
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ cargarStockInicial()
+comment3.params=
+comment3.target=void\ cargarTrabajadores()
+comment4.params=
+comment4.target=void\ cargarCadenas()
+comment5.params=
+comment5.target=void\ configurarSistema()
+comment6.params=
+comment6.target=void\ cargarVehiculos()
+comment7.params=
+comment7.target=void\ menu()
+numComments=8

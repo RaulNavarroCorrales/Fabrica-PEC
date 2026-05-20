@@ -1,6 +1,5 @@
 package trabajadores;
 
-
 public class GestorPlanta extends Trabajador {
 
     public GestorPlanta(String nombre, String apellidos, String dni, String direccion, long nss) {

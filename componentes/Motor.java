@@ -1,10 +1,7 @@
 package componentes;
 
 /**
- * Write a description of class Motor here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Raul
  */
 public class Motor {
     private TipoMotor tipo;

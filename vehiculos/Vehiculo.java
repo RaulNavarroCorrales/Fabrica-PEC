@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Vehiculo {
-
     private String color;
     private int numPlazas;
     private double tara;

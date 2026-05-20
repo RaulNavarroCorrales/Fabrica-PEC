@@ -1,11 +1,7 @@
 package componentes;
 
-
 /**
- * Write a description of class Rueda here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Raul
  */
 public class Rueda {
     private TipoRueda tipo;

@@ -6,10 +6,7 @@ import componentes.TipoRueda;
 import componentes.TipoTapiceria;
 
 /**
- * Write a description of class Tursimo here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Raul
  */
 public class Turismo extends Vehiculo {
     public Turismo(String color, double tara, double pesoMaxAutorizado, TipoMotor motor, TipoTapiceria tapiceria, TipoRueda rueda) {

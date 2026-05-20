@@ -4,7 +4,6 @@ import almacen.Almacen;
 import trabajadores.Operario;
 import vehiculos.EstadoVehiculo;
 import vehiculos.Vehiculo;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,7 +17,7 @@ public class CadenaMontaje {
     private boolean averiada = false;
     private int tiempoReparacionRestante = 0;
     private int numeroAverias = 0;
-
+    
     public CadenaMontaje(String id, Almacen almacen) {
         this.id = id;
         this.cola = new LinkedList<>();

@@ -1,6 +1,5 @@
 package trabajadores;
 
-
 public class AdministradorSistema extends Trabajador {
 
     public AdministradorSistema(String nombre, String apellidos, String dni, String direccion, long nss) {

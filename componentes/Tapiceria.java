@@ -1,10 +1,7 @@
 package componentes;
 
 /**
- * Write a description of class Tapiceria here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Raul
  */
 public class Tapiceria {
     private TipoTapiceria tipo;

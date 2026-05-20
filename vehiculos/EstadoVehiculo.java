@@ -1,10 +1,7 @@
 package vehiculos;
 
 /**
- * Enumeration class EstadoVehiculo - write a description of the enum class here
- *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Raul
  */
 public enum EstadoVehiculo {
     CHASIS, MOTOR, TAPICERIA, RUEDAS, COMPLETO

@@ -4,21 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE - 18/05/26">
+    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE - 19/05/26">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/almacen/AlmacenImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/AlmacenImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/almacen/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componentes/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Motor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/Rueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Rueda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/Tapiceria.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Tapiceria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/TipoMotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/TipoMotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/TipoRueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/TipoRueda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/TipoTapiceria.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/TipoTapiceria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/factory_main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/main/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produccion/CadenaMontaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/CadenaMontaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produccion/PlanificadorSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/Planificador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produccion/SchedulerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/SchedulerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema/FactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/FactoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trabajadores/MecanicoCinta.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/MecanicoCinta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trabajadores/Operario.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/Operario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trabajadores/Trabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/Trabajador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/AdministradorSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/AdministradorSistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/GestorPlanta.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/GestorPlanta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/BiplazaDeportivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/BiplazaDeportivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/Furgoneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Furgoneta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/Turismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Turismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,61 +73,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="9.191249071949903E-52" />
-      <entry key="MS500" value="6.204044539876873E-11" />
-      <entry key="S2" value="0.0028065238028778783" />
-      <entry key="S5" value="0.09539143856963737" />
-      <entry key="S10" value="0.3160573482594001" />
-      <entry key="S30" value="0.8697770835291877" />
-      <entry key="S60" value="1.262451368508181" />
-      <entry key="M2" value="1.5720217946337718" />
-      <entry key="M5" value="1.931356070307811" />
-      <entry key="M10" value="2.4317098484696786" />
-      <entry key="M15" value="2.834800596847806" />
-      <entry key="M30" value="3.562337688917953" />
-      <entry key="H1" value="4.15230600056845" />
-      <entry key="H2" value="4.536635752859003" />
-      <entry key="H4" value="4.757323440649972" />
-      <entry key="D1" value="4.95792086715697" />
-      <entry key="W1" value="4.993947235290681" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000480566433" />
+      <entry key="S60" value="1.0009034341389476" />
+      <entry key="M2" value="1.1451664536680353" />
+      <entry key="M5" value="4.247326161888601" />
+      <entry key="M10" value="10.329015486894967" />
+      <entry key="M15" value="14.406916632035474" />
+      <entry key="M30" value="20.76662803451824" />
+      <entry key="H1" value="25.6435595874137" />
+      <entry key="H2" value="28.889891903594258" />
+      <entry key="H4" value="30.814756060638413" />
+      <entry key="D1" value="32.61535441017727" />
+      <entry key="W1" value="32.944515516084564" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000000016782685" />
-      <entry key="S2" value="1.0170866027523382" />
-      <entry key="S5" value="1.294145253056032" />
-      <entry key="S10" value="1.7654637669482787" />
-      <entry key="S30" value="2.4514448422733137" />
-      <entry key="S60" value="2.703707045189287" />
-      <entry key="M2" value="2.853417208308913" />
-      <entry key="M5" value="3.257003811831524" />
-      <entry key="M10" value="4.096438026958772" />
-      <entry key="M15" value="4.6979256160184715" />
-      <entry key="M30" value="5.610771603039937" />
-      <entry key="H1" value="6.232539528952174" />
-      <entry key="H2" value="6.596068448959506" />
-      <entry key="H4" value="6.79271126692437" />
-      <entry key="D1" value="6.964688231027142" />
-      <entry key="W1" value="6.994936434066029" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="6.478143518099902E-131" />
+      <entry key="S5" value="8.405822713379073E-53" />
+      <entry key="S10" value="9.168327390194507E-27" />
+      <entry key="S30" value="2.092971771929324E-9" />
+      <entry key="S60" value="4.574900842564278E-5" />
+      <entry key="M2" value="0.006763803954856677" />
+      <entry key="M5" value="0.1363340691739343" />
+      <entry key="M10" value="0.4320125630262188" />
+      <entry key="M15" value="0.8068236254111258" />
+      <entry key="M30" value="2.118269540959042" />
+      <entry key="H1" value="3.9615955942898466" />
+      <entry key="H2" value="5.5832818884534205" />
+      <entry key="H4" value="6.670607340706831" />
+      <entry key="D1" value="7.759387596388753" />
+      <entry key="W1" value="7.965128014155032" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6017405450791426E-5" />
-      <entry key="MS500" value="0.10987994885678812" />
-      <entry key="S2" value="0.5894879443213206" />
-      <entry key="S5" value="1.1365860671638481" />
-      <entry key="S10" value="1.8966873027896305" />
-      <entry key="S30" value="3.2222790995843877" />
-      <entry key="S60" value="3.905601867330789" />
-      <entry key="M2" value="4.390952902393491" />
-      <entry key="M5" value="5.171336876190741" />
-      <entry key="M10" value="6.516544444942934" />
-      <entry key="M15" value="7.523469646191845" />
-      <entry key="M30" value="9.16729649106542" />
-      <entry key="H1" value="10.381526679740508" />
-      <entry key="H2" value="11.13092266642217" />
-      <entry key="H4" value="11.549110687975034" />
-      <entry key="D1" value="11.922450226998343" />
-      <entry key="W1" value="11.98886085087226" />
+      <entry key="MS100" value="0.9526379980439373" />
+      <entry key="MS500" value="0.9903428719330246" />
+      <entry key="S2" value="0.9975769252644544" />
+      <entry key="S5" value="0.9990300646389034" />
+      <entry key="S10" value="0.9995149146655609" />
+      <entry key="S30" value="0.9998383283682677" />
+      <entry key="S60" value="1.0008626445104274" />
+      <entry key="M2" value="1.1514148612968564" />
+      <entry key="M5" value="4.37922668147111" />
+      <entry key="M10" value="10.754261509310453" />
+      <entry key="M15" value="15.206776437905512" />
+      <entry key="M30" value="22.878764426512735" />
+      <entry key="H1" value="29.600652764958078" />
+      <entry key="H2" value="34.47034560965949" />
+      <entry key="H4" value="37.48376240350048" />
+      <entry key="D1" value="40.37444452454672" />
+      <entry key="W1" value="40.909600212205206" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -203,7 +214,7 @@
       <workItem from="1779113527267" duration="1195000" />
       <workItem from="1779116260185" duration="39000" />
       <workItem from="1779126732282" duration="2570000" />
-      <workItem from="1779182513208" duration="5346000" />
+      <workItem from="1779182513208" duration="12624000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -301,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779112688390</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UPDATE - 19/05/26">
+      <option name="closed" value="true" />
+      <created>1779191523017</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1779191523017</updated>
+    </task>
+    <task id="LOCAL-00014" summary="UPDATE - 19/05/26">
+      <option name="closed" value="true" />
+      <created>1779191544108</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1779191544108</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +364,8 @@
     <MESSAGE value="UPDATE" />
     <MESSAGE value="UPDATE - 07/05/26" />
     <MESSAGE value="UPDATE - 18/05/26" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - 18/05/26" />
+    <MESSAGE value="UPDATE - 19/05/26" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - 19/05/26" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,41 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE - 18/05/26">
+    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="UPDATE - 19/05/26">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/almacen/AlmacenImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/AlmacenImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/almacen/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componentes/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Motor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/Rueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Rueda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/Tapiceria.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/Tapiceria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/TipoMotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/TipoMotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/TipoRueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/TipoRueda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/TipoTapiceria.java" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/TipoTapiceria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/factory_main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/main/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/AlmacenImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/AlmacenImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Motor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Motor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Rueda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Rueda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Tapiceria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/Tapiceria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/TipoMotor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/TipoMotor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/TipoRueda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/TipoRueda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/TipoTapiceria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/TipoTapiceria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/CadenaMontaje.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/PlanificadorSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/SchedulerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/SchedulerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/DashboardImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/DashboardImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/FactoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/FactoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/LoggerSistema.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/todo.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/AdministradorSistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/AdministradorSistema.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/GestorPlanta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/GestorPlanta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/MecanicoCinta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/MecanicoCinta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/Operario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/Operario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/Trabajador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/Trabajador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/BiplazaDeportivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/BiplazaDeportivo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/EstadoVehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/EstadoVehiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Furgoneta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Furgoneta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Turismo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Turismo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/Vehiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produccion/CadenaMontaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/CadenaMontaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produccion/PlanificadorSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/Planificador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produccion/SchedulerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/SchedulerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema/DashboardImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/DashboardImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema/FactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/FactoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema/LoggerSistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/trabajadores/AdministradorSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/AdministradorSistema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trabajadores/GestorPlanta.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/GestorPlanta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trabajadores/MecanicoCinta.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/MecanicoCinta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trabajadores/Operario.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/Operario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trabajadores/Trabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/Trabajador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/BiplazaDeportivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/BiplazaDeportivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/EstadoVehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/Furgoneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Furgoneta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/Turismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Turismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +63,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="44" />
+    <option name="cachedIndexableFilesCount" value="82" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -82,61 +99,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0555526726359936" />
-      <entry key="MS500" value="1.589109541808761" />
-      <entry key="S2" value="2.5310633597267422" />
-      <entry key="S5" value="3.2286385780338587" />
-      <entry key="S10" value="3.626253636182973" />
-      <entry key="S30" value="5.743424212166222" />
-      <entry key="S60" value="9.876549130838427" />
-      <entry key="M2" value="15.178212640156774" />
-      <entry key="M5" value="20.857759598619555" />
-      <entry key="M10" value="23.643223471698676" />
-      <entry key="M15" value="24.921613564315393" />
-      <entry key="M30" value="26.949841431733343" />
-      <entry key="H1" value="28.77499461065881" />
-      <entry key="H2" value="30.13718868023318" />
-      <entry key="H4" value="30.99268579664076" />
-      <entry key="D1" value="31.82018596828951" />
-      <entry key="W1" value="31.97400005522071" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000480566433" />
+      <entry key="S60" value="1.0009034341389476" />
+      <entry key="M2" value="1.1451664536680353" />
+      <entry key="M5" value="4.247326161888601" />
+      <entry key="M10" value="10.329015486894967" />
+      <entry key="M15" value="14.406916632035474" />
+      <entry key="M30" value="20.76662803451824" />
+      <entry key="H1" value="25.6435595874137" />
+      <entry key="H2" value="28.889891903594258" />
+      <entry key="H4" value="30.814756060638413" />
+      <entry key="D1" value="32.61535441017727" />
+      <entry key="W1" value="32.944515516084564" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.8460976753197155E-181" />
-      <entry key="MS500" value="7.777678017061964E-37" />
-      <entry key="S2" value="9.39101404412273E-10" />
-      <entry key="S5" value="2.449542596261786E-4" />
-      <entry key="S10" value="0.015651014651650506" />
-      <entry key="S30" value="0.25013866787945854" />
-      <entry key="S60" value="0.5001386486560339" />
-      <entry key="M2" value="0.7072050882906812" />
-      <entry key="M5" value="0.8756814370250009" />
-      <entry key="M10" value="1.094881832338971" />
-      <entry key="M15" value="1.4997741209943873" />
-      <entry key="M30" value="2.8880509178817104" />
-      <entry key="H1" value="4.625747813376809" />
-      <entry key="H2" value="6.0331685869877685" />
-      <entry key="H4" value="6.93415156450773" />
-      <entry key="D1" value="7.809659607600289" />
-      <entry key="W1" value="7.972479765304287" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="6.478143518099902E-131" />
+      <entry key="S5" value="8.405822713379073E-53" />
+      <entry key="S10" value="9.168327390194507E-27" />
+      <entry key="S30" value="2.092971771929324E-9" />
+      <entry key="S60" value="4.574900842564278E-5" />
+      <entry key="M2" value="0.006763803954856677" />
+      <entry key="M5" value="0.1363340691739343" />
+      <entry key="M10" value="0.4320125630262188" />
+      <entry key="M15" value="0.8068236254111258" />
+      <entry key="M30" value="2.118269540959042" />
+      <entry key="H1" value="3.9615955942898466" />
+      <entry key="H2" value="5.5832818884534205" />
+      <entry key="H4" value="6.670607340706831" />
+      <entry key="D1" value="7.759387596388753" />
+      <entry key="W1" value="7.965128014155032" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.3827106716225544" />
-      <entry key="MS500" value="1.3176643873082747" />
-      <entry key="S2" value="2.3395925285021755" />
-      <entry key="S5" value="3.1058339042923317" />
-      <entry key="S10" value="3.5645226865484627" />
-      <entry key="S30" value="5.9317133481711934" />
-      <entry key="S60" value="10.314650269541762" />
-      <entry key="M2" value="15.835756820597055" />
-      <entry key="M5" value="21.705067977910748" />
-      <entry key="M10" value="24.720976847478894" />
-      <entry key="M15" value="26.408452924198745" />
-      <entry key="M30" value="29.829534083013723" />
-      <entry key="H1" value="33.39548676141057" />
-      <entry key="H2" value="36.16730192526003" />
-      <entry key="H4" value="37.92517346089097" />
-      <entry key="D1" value="39.629546223046766" />
-      <entry key="W1" value="39.94643647053834" />
+      <entry key="MS100" value="0.9526379980439373" />
+      <entry key="MS500" value="0.9903428719330246" />
+      <entry key="S2" value="0.9975769252644544" />
+      <entry key="S5" value="0.9990300646389034" />
+      <entry key="S10" value="0.9995149146655609" />
+      <entry key="S30" value="0.9998383283682677" />
+      <entry key="S60" value="1.0008626445104274" />
+      <entry key="M2" value="1.1514148612968564" />
+      <entry key="M5" value="4.37922668147111" />
+      <entry key="M10" value="10.754261509310453" />
+      <entry key="M15" value="15.206776437905512" />
+      <entry key="M30" value="22.878764426512735" />
+      <entry key="H1" value="29.600652764958078" />
+      <entry key="H2" value="34.47034560965949" />
+      <entry key="H4" value="37.48376240350048" />
+      <entry key="D1" value="40.37444452454672" />
+      <entry key="W1" value="40.909600212205206" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -147,33 +164,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "ignore.preview.features.used": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rauln/Desktop/IngInformatica/POO/ProyectosBJ/Fabrica-PEC",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rauln/Desktop/IngInformatica/POO/ProyectosBJ/Fabrica-PEC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="produccion" />
@@ -223,7 +240,9 @@
       <workItem from="1779113527267" duration="1195000" />
       <workItem from="1779116260185" duration="39000" />
       <workItem from="1779126732282" duration="2570000" />
-      <workItem from="1779182513208" duration="8879000" />
+      <workItem from="1779182513208" duration="12624000" />
+      <workItem from="1779205370320" duration="141000" />
+      <workItem from="1779267152393" duration="479000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -321,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779112688390</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UPDATE - 19/05/26">
+      <option name="closed" value="true" />
+      <created>1779191523017</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1779191523017</updated>
+    </task>
+    <task id="LOCAL-00014" summary="UPDATE - 19/05/26">
+      <option name="closed" value="true" />
+      <created>1779191544108</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1779191544108</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +392,8 @@
     <MESSAGE value="UPDATE" />
     <MESSAGE value="UPDATE - 07/05/26" />
     <MESSAGE value="UPDATE - 18/05/26" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - 18/05/26" />
+    <MESSAGE value="UPDATE - 19/05/26" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE - 19/05/26" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

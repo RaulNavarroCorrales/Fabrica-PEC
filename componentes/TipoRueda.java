@@ -1,11 +1,7 @@
 package componentes;
 
-
 /**
- * Enumeration class TipoRueda - write a description of the enum class here
- *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Raul
  */
 public enum TipoRueda {
     NORMAL, DEPORTIVO, TODOTERRENO

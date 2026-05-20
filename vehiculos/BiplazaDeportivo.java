@@ -6,10 +6,7 @@ import componentes.TipoRueda;
 import componentes.TipoTapiceria;
 
 /**
- * Write a description of class BiplazaDeportivo here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Raul
  */
 public class BiplazaDeportivo extends Vehiculo {
     public BiplazaDeportivo(String color, double tara, double pesoMaxAutorizado, TipoMotor motor, TipoTapiceria tapiceria, TipoRueda rueda) {
