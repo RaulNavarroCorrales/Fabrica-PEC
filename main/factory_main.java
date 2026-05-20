@@ -26,9 +26,10 @@ public class factory_main {
     public static final FactoryController fc = new FactoryController();
 
     public static void main(String[] args) {
-        System.out.println("====================================\n" +
-                " SISTEMA DE PRODUCCIÓN\n" +
-                "====================================");
+        System.out.println("""
+                ====================================
+                 SISTEMA DE PRODUCCIÓN
+                ====================================""");
 
         fc.setAlmacen(new AlmacenImpl());
 
