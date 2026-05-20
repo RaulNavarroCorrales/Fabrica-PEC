@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="FINAL CHANGES - 20/05/26" />
+    <list default="true" id="aafd1f17-78a5-46c6-8a6e-2ac519fed550" name="Changes" comment="FINAL CHANGES - 20/05/26">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/almacen/AlmacenImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/AlmacenImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/almacen/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/almacen/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/factory_main.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/factory_main.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/factory_main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/factory_main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/main/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/almacen/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/componentes/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/factory_main.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/main/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/produccion/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/sistema/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/trabajadores/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fabrica-PEC/vehiculos/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produccion/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/produccion/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajadores/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/trabajadores/package.bluej" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +216,8 @@
       <workItem from="1779182513208" duration="12624000" />
       <workItem from="1779205370320" duration="141000" />
       <workItem from="1779267152393" duration="1100000" />
-      <workItem from="1779288572076" duration="1172000" />
+      <workItem from="1779288572076" duration="1250000" />
+      <workItem from="1779302939914" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -332,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779292091377</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="FINAL CHANGES - 20/05/26">
+      <option name="closed" value="true" />
+      <created>1779292140344</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1779292140344</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

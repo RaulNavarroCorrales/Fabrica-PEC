@@ -13,6 +13,7 @@ import trabajadores.AdministradorSistema;
 import trabajadores.GestorPlanta;
 import trabajadores.MecanicoCinta;
 import trabajadores.Operario;
+import trabajadores.Trabajador;
 import vehiculos.BiplazaDeportivo;
 import vehiculos.Furgoneta;
 import vehiculos.Turismo;
@@ -120,7 +121,7 @@ public class factory_main {
             System.out.println("==============================");
             System.out.println("1. Mostrar vehículos completados");
             System.out.println("2. Mostrar dashboard final");
-            System.out.println("3. Listar operarios");
+            System.out.println("3. Mostrar trabajadores");            
             System.out.println("4. Listar operarios eficientes");
             System.out.println("5. Vehículos por motor");
             System.out.println("6. Vehículos por tapicería");
@@ -128,6 +129,8 @@ public class factory_main {
             System.out.println("8. Configuraciones más usadas");
             System.out.println("9. Producción por segundo");
             System.out.println("10. Mostrar todo");
+            System.out.println("11. Añadir piezas al almacén");
+            System.out.println("12. Dar de alta trabajador");
             System.out.println("0. Salir");
             System.out.print("Seleccione opción: ");
             // Repetir el menu hasta pulsar 0
@@ -145,7 +148,7 @@ public class factory_main {
                     break;
 
                 case 3:
-                    fc.listarOperariosPorProductividad(false);
+                    menuTrabajadores();
                     break;
 
                 case 4:
@@ -222,6 +225,14 @@ public class factory_main {
                 case 10:
                     fc.mostrarEstadisticas();
                     break;
+                
+                case 11:
+                    anadirStock();
+                    break;
+                    
+                case 12:
+                    darAltaTrabajador();
+                    break;
 
                 case 0:
                     System.out.println("\nFIN DE LA SIMULACIÓN");
@@ -231,5 +242,241 @@ public class factory_main {
                     System.out.println("Opción inválida");
             }
         } while (opcion != 0);
+    }
+
+    // Añadir stock al almacen desde el menú principal
+    private static void anadirStock() {
+        System.out.println("""
+                
+                Tipo de pieza:
+                1. Motor
+                2. Tapicería
+                3. Rueda
+                """);
+    
+        int tipo = sc.nextInt();
+    
+        System.out.print("Cantidad a añadir: ");
+        int cantidad = sc.nextInt();
+    
+        switch (tipo) {
+    
+            case 1:
+    
+                System.out.println("""
+                        
+                        Tipo motor:
+                        1. GASOLINA
+                        2. ELECTRICO
+                        3. HIBRIDO
+                        """);
+    
+                int motor = sc.nextInt();
+    
+                switch (motor) {
+                    case 1 -> fc.getAlmacen().anadirMotor(TipoMotor.GASOLINA, cantidad);
+                    case 2 -> fc.getAlmacen().anadirMotor(TipoMotor.ELECTRICO, cantidad);
+                    case 3 -> fc.getAlmacen().anadirMotor(TipoMotor.HIBRIDO, cantidad);
+                    default -> System.out.println("Tipo inválido");
+                }
+    
+                break;
+    
+            case 2:
+    
+                System.out.println("""
+                        
+                        Tipo tapicería:
+                        1. CUERO
+                        2. TELA
+                        3. ALCANTARA
+                        """);
+    
+                int tap = sc.nextInt();
+    
+                switch (tap) {
+                    case 1 -> fc.getAlmacen().anadirTapiceria(TipoTapiceria.CUERO, cantidad);
+                    case 2 -> fc.getAlmacen().anadirTapiceria(TipoTapiceria.TELA, cantidad);
+                    case 3 -> fc.getAlmacen().anadirTapiceria(TipoTapiceria.ALCANTARA, cantidad);
+                    default -> System.out.println("Tipo inválido");
+                }
+    
+                break;
+    
+            case 3:
+    
+                System.out.println("""
+                        
+                        Tipo rueda:
+                        1. NORMAL
+                        2. DEPORTIVO
+                        3. TODOTERRENO
+                        """);
+    
+                int rueda = sc.nextInt();
+    
+                switch (rueda) {
+                    case 1 -> fc.getAlmacen().anadirRueda(TipoRueda.NORMAL, cantidad);
+                    case 2 -> fc.getAlmacen().anadirRueda(TipoRueda.DEPORTIVO, cantidad);
+                    case 3 -> fc.getAlmacen().anadirRueda(TipoRueda.TODOTERRENO, cantidad);
+                    default -> System.out.println("Tipo inválido");
+                }
+    
+                break;
+    
+            default:
+                System.out.println("Opción inválida");
+        }
+    
+        System.out.println("Stock añadido correctamente");
+    }
+
+    // Añadir un trabajador a la fabrica desde el menú principal
+    private static void darAltaTrabajador() {
+        System.out.println("""
+                
+                Tipo de trabajador:
+                1. Operario
+                2. Mecánico
+                3. Gestor
+                4. Administrador
+                """);
+    
+        int tipo = sc.nextInt();
+        sc.nextLine();
+    
+        System.out.print("Nombre: ");
+        String nombre = sc.nextLine();
+    
+        System.out.print("Apellidos: ");
+        String apellidos = sc.nextLine();
+    
+        System.out.print("DNI: ");
+        String dni = sc.nextLine();
+    
+        System.out.print("Dirección: ");
+        String direccion = sc.nextLine();
+    
+        System.out.print("NSS: ");
+        long nss = sc.nextLong();
+    
+        switch (tipo) {
+            case 1:
+                System.out.print("Montajes realizados: ");
+                int montajes = sc.nextInt();
+                fc.anadirTrabajador(new Operario(nombre,apellidos,dni,direccion,nss,montajes));
+    
+                break;
+    
+            case 2:
+                System.out.print("Reparaciones realizadas: ");
+                int reparaciones = sc.nextInt();
+                fc.anadirTrabajador(new MecanicoCinta(nombre,apellidos,dni,direccion,nss,reparaciones));
+    
+                break;
+    
+            case 3:
+                fc.anadirTrabajador(new GestorPlanta(nombre,apellidos,dni,direccion,nss));
+    
+                break;
+    
+            case 4:
+                fc.anadirTrabajador(new AdministradorSistema(nombre,apellidos,dni,direccion,nss));
+    
+                break;
+    
+            default:
+                System.out.println("Tipo inválido");
+                return;
+        }
+    
+        System.out.println(" Trabajador añadido correctamente");
+    }
+
+    private static void menuTrabajadores() {
+        System.out.println("""
+                ===== TRABAJADORES =====
+                1. Mostrar todos
+                2. Mostrar operarios
+                3. Mostrar mecánicos
+                4. Mostrar gestores
+                5. Mostrar administradores
+                6. Mostrar operarios eficientes
+                7. Mostrar mecánicos eficientes
+                """);
+    
+        int opcion = sc.nextInt();
+    
+        switch (opcion) {
+            case 1:
+                for (Trabajador t : fc.getTrabajadores()) {
+                    System.out.println(t);
+                }
+    
+                break;
+    
+            case 2:
+                for (Trabajador t : fc.getTrabajadores()) {
+                    if (t instanceof Operario) {
+                        System.out.println(t);
+                    }
+                }
+    
+                break;
+    
+            case 3:
+                for (Trabajador t : fc.getTrabajadores()) {
+                    if (t instanceof MecanicoCinta) {
+                        System.out.println(t);
+                    }
+                }
+    
+                break;
+    
+            case 4:
+                for (Trabajador t : fc.getTrabajadores()) {
+                    if (t instanceof GestorPlanta) {
+                        System.out.println(t);
+                    }
+                }
+    
+                break;
+    
+            case 5:
+                for (Trabajador t : fc.getTrabajadores()) {
+                    if (t instanceof AdministradorSistema) {
+                        System.out.println(t);
+                    }
+                }
+    
+                break;
+    
+            case 6:
+                for (Trabajador t : fc.getTrabajadores()) {
+                    if (t instanceof Operario op) {
+    
+                        if (op.esEficiente()) {
+                            System.out.println(op);
+                        }
+                    }
+                }
+    
+                break;
+    
+            case 7:
+                for (Trabajador t : fc.getTrabajadores()) {
+                    if (t instanceof MecanicoCinta mec) {
+    
+                        if (mec.esEficiente()) {
+                            System.out.println(mec);
+                        }
+                    }
+                }
+    
+                break;
+    
+            default:
+                System.out.println("Opción inválida");
+        }
     }
 }
